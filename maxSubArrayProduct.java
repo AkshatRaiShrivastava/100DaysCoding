@@ -1,4 +1,4 @@
-import java.util.*;;
+
 public class maxSubArrayProduct {
     public static int maxProduct(int [] arr){
         int maxProduct = arr[0];
