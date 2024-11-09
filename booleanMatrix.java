@@ -11,33 +11,33 @@ public class booleanMatrix {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 if (matrix[i][j] == 1) {
-                    int ind = i - 1;
-                    while (ind >= 0) {
-                        if (matrix[ind][j] != 1) {
-                            matrix[ind][j] = -1;
+                    int index = i - 1;
+                    while (index >= 0) {
+                        if (matrix[index][j] != 1) {
+                            matrix[index][j] = -1;
                         }
-                        ind--;
+                        index--;
                     }
-                    ind = i + 1;
-                    while (ind < matrix.length) {
-                        if (matrix[ind][j] != 1) {
-                            matrix[ind][j] = -1;
+                    index = i + 1;
+                    while (index < matrix.length) {
+                        if (matrix[index][j] != 1) {
+                            matrix[index][j] = -1;
                         }
-                        ind++;
+                        index++;
                     }
-                    ind = j - 1;
-                    while (ind >= 0) {
-                        if (matrix[i][ind] != 1) {
-                            matrix[i][ind] = -1;
+                    index = j - 1;
+                    while (index >= 0) {
+                        if (matrix[i][index] != 1) {
+                            matrix[i][index] = -1;
                         }
-                        ind--;
+                        index--;
                     }
-                    ind = j + 1;
-                    while (ind < matrix.length) {
-                        if (matrix[i][ind] != 1) {
-                            matrix[i][ind] = -1;
+                    index = j + 1;
+                    while (index < matrix.length) {
+                        if (matrix[i][index] != 1) {
+                            matrix[i][index] = -1;
                         }
-                        ind++;
+                        index++;
                     }
                 }
             }
