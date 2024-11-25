@@ -29,7 +29,7 @@ public class reverseWords {
     }
 
     public static void main(String[] args) {
-        String str = "i.like.coding.very.much";
+        String str = "hello.world.fuck";
         System.out.println(reverse(str));
     }
 }
