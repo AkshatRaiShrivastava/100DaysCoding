@@ -9,7 +9,7 @@ public class longestCommonPrefix {
         String last = strs[strs.length - 1];
         int minLength = Math.min(first.length(), last.length());
         while (counter < minLength && first.charAt(counter) == last.charAt(counter)) {
-            res = res + strs[0].charAt(counter);
+            res = res + first.charAt(counter);
             counter++;
         }
         if (res.isEmpty()) {
@@ -19,7 +19,7 @@ public class longestCommonPrefix {
     }
 
     public static void main(String[] args) {
-        String[] strs = { "hello", "world"};
+        String[] strs = { "hellow", "helloworld" };
         System.out.println(longestPrefix(strs));
     }
 }
