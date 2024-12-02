@@ -1,9 +1,8 @@
 
-
-    public class stackUsingArrray {
+public class stackUsingArrray {
     public static class MyStack {
         int size;
-        int[] arr ;
+        int[] arr;
         int top;
 
         public MyStack(int size) {
@@ -11,7 +10,6 @@
             arr = new int[size];
             top = -1;
         }
-
 
         boolean isEmpty() {
             if (top == -1) {
